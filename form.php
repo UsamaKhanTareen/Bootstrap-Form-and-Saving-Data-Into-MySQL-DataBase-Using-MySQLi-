@@ -2,8 +2,6 @@
 Copy statrter template and paste on IDE
 Now go to components/Navbar copy and paste it under body tag
 Know we have to come to components/form and copy it under navbar under div container will be made by my self
-Note: isset function returns true if the variable exists and is not NULL, otherwise it returns false.
-
 
 ---->
 
