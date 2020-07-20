@@ -63,10 +63,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
     $name = $_POST['name'];
     $email = $_POST['email'];
     $desc = $_POST['desc'];
-    //pasting an altert in echo section by using bootstrap
-    
 
-  //submit these to databse
+  
   //creating variable to connect to db
   $server = "localhost";
   $username = "root";
@@ -76,12 +74,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
   //connecting to database
   $con = mysqli_connect($server,$username,$password, $database);
 
-  //checking connections by using if and else condition
+  //checking connections
   if ($con == FALSE){
       echo ("Connection failed:".mysqli_connect_error());
   }
   else{
-      //Submit these to database
       //Sql query to be executed
       $sql = "INSERT INTO `contactus` (`name`, `email`, `concern`, `dt`) VALUES ('$name', '$email', '$desc', current_timestamp())";
       $result = mysqli_query($con , $sql);
