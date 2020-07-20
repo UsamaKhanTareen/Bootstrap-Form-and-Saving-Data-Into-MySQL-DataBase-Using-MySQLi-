@@ -57,7 +57,8 @@ Know we have to come to components/form and copy it under navbar under div conta
 </nav>
 <!---Navbar ends here --->
 
-<!--- Php server request method starts here--->
+<!--- Php Code starts here--->
+    <!--- Checking server request method and creating variable by using post method to getting data from text boxes --->
 <?php
 if ($_SERVER['REQUEST_METHOD'] == 'POST'){
     $name = $_POST['name'];
@@ -101,7 +102,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
 
 
 ?>
-<!---Php server request method Ends here----->
+<!---Php code ends here----->
 
 
 <!--Form start here -->
