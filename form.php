@@ -82,6 +82,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
   else{
       //Sql query to be executed
       $sql = "INSERT INTO `contactus` (`name`, `email`, `concern`, `dt`) VALUES ('$name', '$email', '$desc', current_timestamp())";
+      //Performing query against Database by using mysqli_query function
       $result = mysqli_query($con , $sql);
   }
 
